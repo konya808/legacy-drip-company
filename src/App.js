@@ -10,6 +10,8 @@ import GetProducts from './components/GetProducts';
 import SingleProduct from './components/SingleProduct';
 import AboutUs from './components/AboutUs';
 import 'bootstrap-icons/font/bootstrap-icons.min.css';
+import ProductReviews from './components/ProductReviews';
+import ForgotPassword from './components/ForgotPassword';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path='/' element= {<GetProducts/>} />
         <Route path = '/singleproduct' element = {<SingleProduct/>} />
         <Route path ='/aboutus' element = {<AboutUs/>} />
+        <Route path='/productreview' element={<ProductReviews/>}/>
+        <Route path='/forgot password?'element={<ForgotPassword/>}/>
       </Routes>
       </Router>
     </div>

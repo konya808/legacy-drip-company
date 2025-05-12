@@ -1,0 +1,87 @@
+/* Container styling */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 30px;
+    background-color: #121212; /* Dark background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Brand styling */
+  .navbar-brand a {
+    color: #f39c12; /* Accent color */
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  /* Nav links */
+  .navbar-links a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #f39c12;
+  }
+  
+  /* Auth buttons */
+  .navbar-auth .btn {
+    margin-left: 15px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn.login {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  
+  .btn.login:hover {
+    background-color: #ffffff;
+    color: #121212;
+  }
+  
+  .btn.register {
+    background-color: #f39c12;
+    color: #121212;
+  }
+  
+  .btn.register:hover {
+    background-color: #e67e22;
+    color: white;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .main-navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px;
+    }
+  
+    .navbar-links, .navbar-auth {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+  
+    .navbar-links a,
+    .navbar-auth .btn {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
